@@ -10,6 +10,7 @@ app.use(cors());
 app.use(express.urlencoded({extended: true}));
 // app.use('/api', require("./routes/users"))
 app.use('/api', require("./routes/post"))
+app.use('/api', require("./routes/order"))
 
 const mongoose = require('mongoose');
 const uri = "mongodb+srv://business:Ediku126@cluster0.6wrd4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
